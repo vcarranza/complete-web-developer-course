@@ -2,12 +2,64 @@
     Property: value;
 } */
 
-h2 {
-    color:red;
+/* changes to all the document */
+* {
+    text-align: right;
 }
+/* elements */
+body {
+    background-image: url(wfb-vic.jpg);
+    background-size: cover;
+}
+/* elements, elements */
+h2, p {
+    color:#802615;
+    text-align: center;
+    border: 5px solid #FFB7AA;
+    cursor: pointer;
+}
+h2 + p:hover {
+    color:#802615;
+    text-align: center;
+    border: 5px solid #FFB7AA;
+    cursor: pointer;
+}
+/* element element
+h2 p {
+    color:#802615;
+    text-align: center;
+    border: 5px solid #FFB7AA;
+    cursor: pointer;
+} */
+
+/* element > element
+h2 > p {
+    color:#802615;
+    text-align: center;
+    border: 5px solid #FFB7AA;
+    cursor: pointer;
+} */
 p {
     color:pink;
 }
 p {
     color:green;
+}
+li {
+    list-style: none;
+    display: inline-block;
+}
+/* .classes */
+.webtext:last-child{
+    border: 5px dashed gold;
+}
+.active{
+    color: red;
+}
+/* ids  */
+#div1{
+    background: rgb(0,0, 255, 0.2);
+}
+#div2{
+    background: rgb(255,0, 255, 0.2);
 }
