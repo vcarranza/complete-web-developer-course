@@ -10,6 +10,7 @@
 body {
     background-image: url(wfb-vic.jpg);
     background-size: cover;
+    opacity: 0.8;
 }
 /* elements, elements */
 h2, p {
