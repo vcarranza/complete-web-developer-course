@@ -8,11 +8,18 @@ var sayBye = function (){
 }
 
 sayBye(); */
-function sing(song){
+/* function sing(song){
     console.log (song)
     
 }
 
 sing("la  dee dda");
 sing("kiki you love");
+ */
+ function multiply (a, b) {
+    return a*b;
+}   
+alert(12);
 
+// parameters
+// arguments
