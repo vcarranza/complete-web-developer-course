@@ -1,8 +1,16 @@
 var database = [
     {
-    username: "vcarranza7",
-    password: "bitwise"
-    }
+        username: "vcarranza7",
+        password: "bitwise"
+    },
+    {
+        username: "sandy",
+        password: "1234"
+    },
+    {
+        username: "bobby",
+        password: "1234"
+        }
 ];
 
 var newsFeed = [
@@ -20,18 +28,27 @@ var newsFeed = [
     }
 ];
 
+function isUserValid(username, password){
+    for (var i=0; i< database.length; i++){
+        if(database[i].username === username &&
+            database[i].password === password) {
+                return true;
+        } 
+    }
+    return false;
+}
 
-var userNamePrompt = prompt("what's your username?");
-var passwordPrompt = prompt("what's your password");
-
-function signIn(user, pass){
-    if (user === database[0].username && 
-        pass === database[0].password) {
-            console.log(newsFeed);
-        } else {
-            alert("Sorry, wrong username and password!");
-        }
+function signIn(username, password){
+    for (var i=0; i< database.length; i++){
+        if(isUserValid(username, password)) {
+                console.log(newsFeed);
+            } else {
+                alert("Sorry, wrong username and password");
+            } 
+    }
         
 }
 
 signIn(userNamePrompt, passwordPrompt);
+var userNamePrompt = prompt("what's your username?");
+var passwordPrompt = prompt("what's your password");
